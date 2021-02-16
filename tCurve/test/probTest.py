@@ -205,3 +205,22 @@ class ProbTest(TestCase):
         result = prob(self.inputDictionary)
         self.assertIn(self.errorKey, result)
         self.assertIn(self.errorValue, result[self.errorKey])
+        
+# 200 integrate
+#    Desired Level: Boundry Value analysis
+#    Input and Output:
+#        t   -> integer    G.E 0,    mandatory,    validated
+#        n   -> integer    2<n<32,     mandatory    validated
+#        _f  -> function    ,        optional
+#   Output:
+#    Calculation result
+#   Happy Path:
+#        t = 0, n = 3
+#        nominal t, nominal n
+        
+    def test200_510ShouldReturnZero(self):
+        self.setT(0)
+        self.setN(4)
+        expect = 0.0
+        result = _integrate(self.nominalT, self.nominalN, _f)
+        self.assertEqual(result, expect, "ooooo")
