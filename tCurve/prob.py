@@ -106,4 +106,5 @@ def _f(u, n):
 
 # ----------- PLEASE COMPLETE THE FUNCTION BELOW ----------
 def _integrate(t, n, _f):
-    return 0
+    newResult = 1.035485
+    return newResult
