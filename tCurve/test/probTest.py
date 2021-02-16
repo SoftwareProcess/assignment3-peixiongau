@@ -1,6 +1,7 @@
 from unittest import TestCase
 from tCurve.prob import prob as prob
 import json
+from tCurve.prob import _integrate
 
 
 class ProbTest(TestCase):
