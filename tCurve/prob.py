@@ -1,6 +1,5 @@
 import math
 import platform
-from test.support import testresult
 
 
 # Outward facing method(s)
@@ -106,28 +105,5 @@ def _f(u, n):
 
 
 # ----------- PLEASE COMPLETE THE FUNCTION BELOW ----------
-
-#integrate(t, n, _f)
 def _integrate(t, n, _f):
-    
-    slices = 4
-    lowB = 0
-    highB = t
-    delta = 0.0001
-    step = (highB - lowB) / slices
-    newResult = delta
-    oldResult = 0
-    while (abs(newResult-oldResult)/newResult) > delta:
-        oldResult = newResult
-        step = (highB - lowB) / slices
-        newResult = 0
-        for i in range(0, slices - 2, 2):
-            newResult += _f(lowB + i*step, n) + 4 * _f(lowB + (i+1)*step, n)    \
-             + _f(lowB + (i+2)*step, n)
-        newResult *= (step/3)
-        
-        slices *= 2
-    
-    #result = 1.33258
-        
-    return newResult
+    pass
